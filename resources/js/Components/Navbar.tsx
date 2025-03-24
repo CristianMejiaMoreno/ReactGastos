@@ -1,6 +1,7 @@
 import React from 'react'
 import Flag from 'react-world-flags'
 import Button from './Button'
+import {  Link } from '@inertiajs/react';
 
 const Navbar = () => {
   return (
@@ -18,7 +19,7 @@ const Navbar = () => {
                   <Flag width={16} height={16} code="col" />
               </a>
               <a href="https://wa.me/+573017750621" target="_blank" rel="noopener noreferrer" className="text-sm  text-gray-500 dark:text-white hover:underline">+573017750621</a>
-              <a href={route('login')} className="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+              <Link href={route('login')} className="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</Link>
             </div>
         </div>
     </nav>

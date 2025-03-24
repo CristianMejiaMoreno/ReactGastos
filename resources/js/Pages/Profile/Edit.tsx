@@ -21,20 +21,23 @@ export default function Edit({
 
             <div className="py-12">
                 <div className="mx-auto max-w-7xl space-y-6 sm:px-6 lg:px-8">
-                    <div className="bg-white p-4 shadow sm:rounded-lg sm:p-8">
+                    {/* Form: Update Profile Information */}
+                    <div className="bg-indigo-100 p-4 sm:rounded-lg sm:p-8">
                         <UpdateProfileInformationForm
                             mustVerifyEmail={mustVerifyEmail}
                             status={status}
-                            className="max-w-xl"
+                            className="max-w-full sm:max-w-xl"
                         />
                     </div>
 
-                    <div className="bg-white p-4 shadow sm:rounded-lg sm:p-8">
-                        <UpdatePasswordForm className="max-w-xl" />
+                    {/* Form: Update Password */}
+                    <div className="bg-indigo-100 p-4 sm:rounded-lg sm:p-8">
+                        <UpdatePasswordForm className="max-w-full sm:max-w-xl" />
                     </div>
 
-                    <div className="bg-white p-4 shadow sm:rounded-lg sm:p-8">
-                        <DeleteUserForm className="max-w-xl" />
+                    {/* Form: Delete Account */}
+                    <div className="bg-indigo-100 p-4 sm:rounded-lg sm:p-8 pb-20"> {/* Padding bottom para más espacio interno */}
+                        <DeleteUserForm className="max-w-full sm:max-w-xl" />
                     </div>
                 </div>
             </div>
